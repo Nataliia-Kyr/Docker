@@ -9,7 +9,7 @@ ARG TFENV_VERSION=1.0.2
 ARG TGENV_VERSION=0.0.3 
 ARG TERRAFORM_VERSION=0.11.3
 
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+#SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN wget -q https://storage.googleapis.com/kubernetes-release/release/${KUBE_LATEST_VERSION}/bin/linux/amd64/kubectl -O /usr/local/bin/kubectl \
     && chmod +x /usr/local/bin/kubectl \
 	&& mv /usr/local/bin/kubectl /usr/local/bin/kubectl \
